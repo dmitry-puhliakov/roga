@@ -1,1 +1,21 @@
-$c-gray: #eee;
+@import "vendors/include-media";
+
+$breakpoints: (
+  "full": 1920px,
+  "xl": 1680px,
+  "macbook": 1440px,
+  "ipad-pro": 1366px,
+  "md-desktop": 1200px,
+  "desktop": 1024px,
+  "tablet": 768px,
+  "phone": 667px,
+  "md-phone": 568px,
+  "sm-phone": 480px,
+  "xs-phone": 375px
+);
+// ligatured operators ≥ ≤
+
+$c-main: #fff;
+$c-brand: #fd9215;
+$c-bg: #00053b;
+$c-err: #eb5757;

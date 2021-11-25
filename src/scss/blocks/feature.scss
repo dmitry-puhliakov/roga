@@ -1,0 +1,20 @@
+.feature {
+  text-align: center;
+   &__img {
+    width: 116px;
+    height: 113.48px;
+   }
+
+   &__title {
+    margin-top: 11px;
+
+    font-family: "Anton", Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    line-height: 127.21%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-shadow: 0px 3.50079px 0.875197px rgba(0, 0, 0, 0.4);
+    transform: matrix(0.98, 0, -0.21, 1, 0, 0);
+   }
+ }

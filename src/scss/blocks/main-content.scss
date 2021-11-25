@@ -1,0 +1,21 @@
+.main-content {
+  &__wrapper {
+    padding: 38px 0 15px;
+  }
+
+  &__features {
+    padding-right: 20px;
+
+    @include media('<=md-desktop') {
+      padding: 0;
+    }
+  }
+
+  &__cashout {
+    margin-left: -20px;
+
+    @include media('<=md-desktop') {
+      margin: 0;
+    }
+  }
+}

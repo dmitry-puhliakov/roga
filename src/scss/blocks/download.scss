@@ -1,0 +1,44 @@
+.download {
+  &__btn {
+    display: block;
+    position: relative;
+    width: 503px;
+    margin-left: 13px;
+    padding: 25px 0 25px;
+
+
+
+    font-weight: 900;
+    font-size: 3.57746rem;
+    line-height: 4.3rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $c-main;
+
+    background: linear-gradient(100.32deg, #ffc123 -6.33%, #FA4800 132.43%);
+    border-radius: 5.19179px;
+    transform: matrix(0.98, 0, -0.22, 1, 0, 0);
+    @extend %transition;
+
+    &:hover {
+      transform: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+
+      background: linear-gradient(100.32deg, #ffc123 -6.33%, #FA4800 132.43%);
+      filter: blur(34.6119px);
+      z-index: -1;
+    }
+
+    @include media('<=md-desktop') {
+      width: 100%;
+      margin: 0;
+      padding: 15px 0 15px;
+    }
+  }
+}

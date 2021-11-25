@@ -1,0 +1,97 @@
+.hero {
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__wrapper {
+    padding: 36px 0 74px;
+
+    @include media('<=md-desktop') {
+      padding: 30px 0;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__slogan {
+    margin-top: 24px;
+  }
+
+   &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 27px;
+    margin-left: 20px;
+
+    @include media('<=md-desktop') {
+      margin-left: 0;
+    }
+
+    @include media('<=desktop') {
+      flex-direction: column;
+    }
+  }
+
+  &__box {
+    margin-top: 16px;
+    margin-left: 70px;
+
+    @include media('<=md-desktop') {
+      margin-left: 0;
+    }
+  }
+
+  &__title {
+    font-family: "Anton", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 7.25418rem;
+    line-height: 10.6rem;
+    text-align: center;
+    letter-spacing: 0.105em;
+    text-transform: uppercase;
+    transform: matrix(0.98, 0, -0.21, 1, 0, 0);
+
+    background: linear-gradient(180deg, rgb(255, 255, 255) 65%, #cddcdf
+    65%, #e0f9ff 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 3.60232px 1.20077px rgba(0, 0, 0, 0.4));
+  }
+
+  &__subtitle {
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 3.35816rem;
+    line-height: 4.1rem;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transform: matrix(0.98, 0, -0.21, 1, 0, 0);
+
+    background: linear-gradient(180deg, rgb(255, 255, 255) 50%, #cddcdf
+    50%, #e0f9ff 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 3.60232px 1.20077px rgba(0, 0, 0, 0.4));
+  }
+
+  &__download {
+    margin-top: 57px;
+  }
+
+  &__download-txt {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 1.92115rem;
+    line-height: 2.3rem;
+    text-align: center;
+    color: $c-main;
+    transform: matrix(0.98, 0, -0.22, 1, 0, 0);
+  }
+}

@@ -1,18 +1,6 @@
-# Simple Gulp template v.1.0.0
-Simple gulp template will help with frontend projects.
-
-List of plugins were used:
-- browser-sync,
-- del,
-- gh-pages,
-- gulp,
-- gulp-autoprefixer,
-- gulp-clean-css,
-- gulp-file-include,
-- gulp-group-css-media-queries,
-- gulp-imagemin,
-- gulp-newer,
-- gulp-rename,
-- gulp-sass,
-- gulp-uglify-es,
-- sass.
+# "Roga i Kopyta" landing page
+### Task description
+- Make a page according to a [template](https://www.figma.com/file/wvkEXGLJt8nYvXvdtds0hk/Untitled?node-id=0%3A1)
+### Result
+- Stack of technologies: HTML5, SCSS, BEM, JS.
+- [DEMO LINK](https://dmitry-puhliakov.github.io/roga/)

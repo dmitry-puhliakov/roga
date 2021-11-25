@@ -1,0 +1,31 @@
+.pay-btn {
+  display: block;
+  width: 253px;
+  height: 62px;
+  padding: 16px 10px 17px;
+  background-color: $c-main;
+  border-radius: 10px;
+  text-align: center;
+  @extend %transition;
+
+  @include media('<=desktop') {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: $c-brand;
+    transform: scale(1.1);
+  }
+
+  &__img {
+    &--visa {
+      width: 90px;
+      height: 29px;
+    }
+
+    &--mc {
+      width: 205.7px;
+      height: 36.17px;
+    }
+  }
+}

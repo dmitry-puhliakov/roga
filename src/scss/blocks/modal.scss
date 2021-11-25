@@ -1,0 +1,72 @@
+.modal {
+  position: fixed;
+  width: 500px;
+  max-height: 90%;
+  max-width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: $c-main;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: 200ms ease-in-out;
+  overflow-y: auto;
+  z-index: 10;
+
+  &.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $c-bg;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $c-bg;
+  }
+
+  &__body {
+    padding: 20px 40px;
+    color: $c-bg;
+    font-size: 2rem;
+  }
+
+  &__close {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $c-bg;
+  }
+
+  &__btn {
+    width: 100%;
+    height: 6rem;
+    border: 1px solid $c-bg;
+    background-color: $c-bg;
+    font-size: 2.5rem;
+    color: $c-main;
+
+    cursor: pointer;
+    @extend %transition;
+
+    &:hover {
+      background-color: $c-main;
+      border: 1px solid $c-brand;
+      background-color: $c-brand;
+    }
+
+    &:focus {
+      border: none;
+      background-color: #517da3;
+      color: #f4f5f8;
+    }
+  }
+}

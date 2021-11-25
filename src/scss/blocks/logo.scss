@@ -1,0 +1,11 @@
+.logo {
+  &__img {
+    width: 416px;
+    height: 111px;
+
+    @include media('<=sm-phone') {
+      width: 280px;
+      object-fit: contain;
+    }
+  }
+}

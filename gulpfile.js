@@ -61,14 +61,14 @@ function css() {
       })
     )
     .pipe(dest(path.build.css))
+    .pipe(browsersync.stream())
     .pipe(clean_css())
     .pipe(
       rename({
         extname: ".min.css",
       })
     )
-    .pipe(dest(path.build.css))
-    .pipe(browsersync.stream());
+    .pipe(dest(path.build.css));
 }
 
 function js() {

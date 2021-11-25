@@ -1,0 +1,31 @@
+//------------------- footer to bottom
+html,
+body {
+  height: 100%;
+}
+
+._wrapper {
+  display: grid;
+  position: relative;
+  grid-template-rows: 1fr auto;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+//------------------- container
+._container {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 30px 0 50px;
+
+  @include media('<=md-desktop') {
+    padding: 0 30px;
+  }
+
+  @include media('<=tablet') {
+    padding: 0 20px;
+  }
+}

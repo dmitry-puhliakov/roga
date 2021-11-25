@@ -2,12 +2,9 @@
 @import "utils";
 @import "fonts";
 @import "typography";
-
-html {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 10px;
-}
+@import "common";
+@import "blocks";
 
 body {
-  background: $c-gray;
+  background: $c-bg;
 }

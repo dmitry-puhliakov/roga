@@ -1,0 +1,36 @@
+.cashout {
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    text-align: center;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    margin: 0 -15px;
+
+    @include media('<=desktop') {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    margin: 0 15px;
+
+    @include media('<=desktop') {
+      width: 50%;
+      align-self: center;
+      margin: 0 0 30px;
+    }
+
+    @include media('<=phone') {
+      width: 80%;
+    }
+  }
+}

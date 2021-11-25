@@ -1,0 +1,40 @@
+.features {
+  &__title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    &--brand-color {
+      font-weight: 800;
+      color: $c-brand;
+    }
+
+    &--lower-weight {
+      font-weight: 500;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    padding: 0 60px;
+
+    @include media('<=tablet') {
+      padding: 0;
+    }
+  }
+
+  &__item {
+    width: calc(33.33% - 40px);
+    margin: 0 20px 43px;
+
+    @include media('<=md-phone') {
+      width: calc(50% - 40px);
+    }
+  }
+}
